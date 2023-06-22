@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+<! ––Prueba de color––>
+        <form action="do_stuff.php">
+            <input type="color" name="color-box" value="#008000">
+        </form>
+<! ––Prueba de fecha>
+        <form action="do_stuff.php">
+            <input type="date" value="2023-01-06">
+        </form>
+<! ––Prueba de mes ––>
+        <form action="do_stuff.php">
+            <input type="month" value="1998-04">
+        </form>
+<! ––Prueba de tiempo ––>
+        <form name="miformato" id="miformato" method="get">
+            <input type="time" name="time" value="22:40:00">
+            <input type="submit" value="Enviar información">
+        </form>
+<! ––Prueba de semana ––>
+        <form action="do_stuff.php">
+            <input type="week" value="2013-W05">
+        </form>
+        <form action="do_stuff.php">
+           Enter the email address: <input type="email" name="email">
+            <input type="submit" value="Da click pa enviar">
+        </form><br>
+<! ––Prueba de búsqueda ––>
+        <form action="do_stuff.php">
+            <input type="search" name="mysearch">
+            <input type="submit" name="busquedarealizada" value="Buscar">
+        </form>
+<! ––Prueba de rango ––>
+        <form>
+            <input type="range" name="range_slider" min="0" max="10" step="1">
+        </form>
+<! ––Prueba de teléfono ––>
+        <form name="myform" id="myform" method="get">
+            <input type="tel" pattern="^(?:\(\d{2}\)|\d{3})(?: *- *)?\d{3}(?: *- *)?\d{4}$" title="Phone number (Format: (57)123-1234)">
+            <input type="submit">
+        </form><br>
+<! ––Prueba de autocompletar ––>
+        <form action="test.php" autocomplete="on">
+            Name: <input type="text" name="autocompletado">
+            <input type="submit">
+        </form><br>
+<! ––Prueba de autofoco ––>
+        <form action="test.php">
+            Focused field: <input type="text" name="autofoco" autofocus>
+        </form><br>
+<! ––Prueba de no validación ––>
+        <form name="myform" id="myform" method="get" novalidate>
+            <input type="tel" pattern="^(?:\(\d{2}\)|\d{3})(?: *- *)?\d{3}(?: *- *)?\d{4}$" title="Phone number (Format: (57)123-1234)">
+            <input type="submit">
+        </form><br>
+<! ––Prueba de marcador de posición ––>
+        <form id="our_form" method="get">
+            <input type="text" name="placeholder" placeholder="Type here your name">
+            <input type="submit">
+        </form><br>
+<! ––Prueba de requerido––>
+        <form name="required" id="required" method="get">
+            <input type="text" name="required" id="required_name" required>
+            <input type="submit" value="Enviar datos">
+        </form><br>
+<! ––Prueba de formmethod––>
+        <form action="test.php" name="required" method="get">
+            <input type="text" name="required" id="required_name">
+            <input type="submit" value="Enviar datos">
+            <input type="submit" formmethod="post" formaction="test.php" 
+                value="Enviar datos">
+        </form><br>
+<! ––Prueba de formenctype––>
+        <form action="test.php" autocomplete="on">
+            <input>
+            <input type="submit" value="Enviar información" formenctype="application/x-www-form-urlencoded">
+            <! ––Default is:application/x-www-form-urlencoded. However, If uploading files use: multipart/form-data ––>
+        </form><br>
+<! ––Prueba de formtarget––>
+<form action="hello.php" method="POST">
+	Nombre: <input type="text" name="nombre">
+	<input type="submit" formtarget="_blank" value="Enviar en target blank">
+    <! ––There are 4 different forms to _blank, google them––>
+	<input type="submit" value="Enviar">
+</form><br>
+<! ––Prueba de multiple––>
+<form action="hello.php" method="post">
+    Select files: <input type="file" name="file" multiple>
+	<input type="submit" value="Enviar">
+</form><br>
+<! ––Prueba de datalist&list––>
+<form>
+    <label>Cars:
+        <datalist id="cars">
+            <option value="Nissan"></option>
+            <option value="Toyota"></option>
+            <option value="Jeep"></option>
+        </datalist>
+        Look for a car:
+        <input type="text" name="cars" list="cars">
+    </label>
+</form>
+<! ––Prueba del elemento progress––>
+    <form action="do_stuff.php">
+        <progress value="20" max="100"></progress>
+    </form>
+<! ––Prueba del elemento meter––>
+    <form action="do_stuff.php">
+        <meter min="0" max="100" value="90"></meter>
+    </form>
+<! ––Prueba del elemento output>
+    <form action="do_stuff.php">
+        <output id="our_output"></output>
+    </form>
+    </body>
+</html>

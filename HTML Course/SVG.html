@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <img src="imagenprueba.svg" height="300" alt="Generic image"/>
+
+        <svg width="500" height="500">
+            <circle cx="60" cy="60" r="50" fill="red" stroke="black" stroke-width="3"></circle>
+        </svg>
+        <svg width="500" height="500">
+            <rect width="380" height="200" x="10" y="40" fill="green" stroke="black" stroke-width="3"></rect>
+        </svg>
+        <svg width="1000" height="1000">
+            <line x1="200" y1="100" x2="10" y2="100" style="stroke:blueviolet;
+            stroke-linecap:square; stroke-width:15"></line>
+        </svg>
+        <svg width="2000" height="500">
+            <polyline style="stroke-linejoin:bevel; stroke:rgb(196, 172, 111); stroke-width:12; fill:none;"
+                      points="100 100, 150 150, 200 100">
+            </polyline>
+        </svg>
+        <svg width="1000" height="500">
+            <ellipse cx="300" cy="160" rx="200" ry="90" style="fill:green; stroke:black; stroke-width:3;"></ellipse>
+        </svg>
+        <svg width="800" height="800">
+            <polygon points="100 100, 200 200, 300 0, 180 10" style="fill:crimson; stroke:black;"></polygon>
+        </svg>
+        <svg width="600" height="600">
+            <rect width="200" height="200" x="10" y="10" fill="blue" stroke="black" stroke-width="3">
+                <animate attributeName="x" from="0" to="500" dur="5s" fill="freeze" repeatCount="indefinite"></animate>
+            </rect>
+        </svg>
+        <svg width="700" height="500">
+            <path d="M 0 1, L 200 200, L 200 1, Z" style="fill:none; stroke:black; stroke-width:2"></path>
+            <path d="M 400 1, H 600, V 200, Z" style="fill:none; stroke:black; stroke-width:2"></path>
+        </svg>
+        <svg width="1000" height="1000">
+            <defs>
+                <filter id="our_effect_id">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="5"></feGaussianBlur>
+                </filter>
+            </defs> 
+            <rect x="200" y="200" width="300" height="300" fill="orange"
+                filter="url(#our_effect_id)"></rect>
+        </svg>
+    </body>
+</html>

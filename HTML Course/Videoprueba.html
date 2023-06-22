@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <video id="movie1" width="500" height="500" controls poster="1-6-video-and-audio-demos/arrow.png">
+            <source src="1-6-video-and-audio-demos/video.mp4"/>
+            <source src="1-6-video-and-audio-demos/video.ogv"/><! ––Otro formato que la web puede reconocer para reproducir un video HTML5––>
+            <track src="subtitles_en.vtt" kind="subtitles" label="captions" srclang="en" default/>
+            <track src="subtitles_en.vtt" kind="subtitles" label="captions" srclang="fr" default/>
+            <track src="subtitles_en.vtt" kind="subtitles" label="captions" srclang="es-mx" default/>
+        </video>
+        <! ––Atributo Loop se pone al final de "arrow.png" y se reproduce el video infinitamente––>
+        <! ––Atributo Autoplay se pone al final de "arrow.png" y se reproduce el video automáticamente (me funcionó con el atributo muted)––>
+        <! ––Atributo Muted se pone al final de "arrow.png" y se silencia el video––>
+
+    </body>
+</html>
